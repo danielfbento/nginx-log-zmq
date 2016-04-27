@@ -9,7 +9,9 @@ It's asynchronous and only requires a small library.
 
 _This module is not distributed with the nginx source._ See the [installation instructions](#installation).
 
-[![Build Status](https://travis-ci.org/danifbento/nginx-log-zmq.svg?branch=master)](https://travis-ci.org/sapo/nginx-log-zmq)
+
+[![Build Status](https://travis-ci.org/danifbento/nginx-log-zmq.svg?branch=master)](https://travis-ci.org/danifbento/nginx-log-zmq)
+
 
 Table of Contents
 =================
@@ -36,7 +38,7 @@ This module is already production ready.
 Description
 ===========
 
-This is a nginx logger module integrated with [ZeroMQ](http://zermq.org) library.
+This is a nginx logger module integrated with [ZeroMQ](http://zeromq.org) library.
 
 `nginx-log-zmq` provides a very efficient way to log data for one or more PUB/SUB subscribers, over one or more different endpoints. This can be useful for data gathering and processing.
 
@@ -186,7 +188,7 @@ Installation
 
 To build a nginx binary containting this module:
 
-* Download the latest version of this module from [GitHub](http://github.com/danielfbento/nginx-log-zmq/).
+* Download the latest version of this module from [GitHub](http://github.com/danifbento/nginx-log-zmq/).
 * Grab the nginx source code from [nginx.org](http://www.nginx.org), for example, version 1.6.2 (see [nginx compatibility](#compatibility)), and then build it like so:
 
 ```
@@ -213,7 +215,7 @@ The following versions of nginx are known to work with this module:
 Report Bugs
 ===========
 
-Bug reports, wishlists, or patches are welcome. You can submit them on our [GitHub repository](http://github.com/danielfbento/nginx-log-zmq/).
+Bug reports, wishlists, or patches are welcome. You can submit them on our [GitHub repository](http://github.com/danifbento/nginx-log-zmq/).
 
 [Back to TOC](#table-of-contents)
 
@@ -229,7 +231,8 @@ Copyright & Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2014 SAPO - PT Comunicações S.A
+Copyright (c) 2014-2015 SAPO - PT Comunicações S.A  
+Copyright (c) 2016 Altice Labs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
