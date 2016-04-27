@@ -6,7 +6,8 @@ compiler:
 env:
   - VER_NGINX=1.6.3
   - VER_NGINX=1.8.1
-  - VER_NGINX=1.9.12
+  - VER_NGINX=1.9.15
+  - VER_NGINX=1.10.0
 
 sudo: false
 
