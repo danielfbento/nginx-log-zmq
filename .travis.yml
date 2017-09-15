@@ -4,11 +4,10 @@ compiler:
   - clang
 
 env:
-  - VER_NGINX=1.6.3
   - VER_NGINX=1.8.1
-  - VER_NGINX=1.9.15
   - VER_NGINX=1.10.3
-  - VER_NGINX=1.11.9
+  - VER_NGINX=1.12.1
+  - VER_NGINX=1.13.5
 
 sudo: false
 
