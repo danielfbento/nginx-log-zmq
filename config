@@ -46,18 +46,18 @@ ngx_module_incs=$ngx_addon_dir
 ngx_module_deps=$ZMQ_DEPS
 ngx_module_libs=
 
-if [ "$ngx_module_link" = "DYNAMIC" ]; then
-	ngx_module_type=MISC
+if test -n "$ngx_module_link"; then
+	ngx_module_type=HTTP
 	ngx_module_name="$ZMQ_MODULE"
+	ngx_module_incs=
+	ngx_module_deps="$ZMQ_DEPS"
 	ngx_module_srcs="$ZMQ_SRCS"
 
 	. auto/module
 
-elif [ "$ngx_module_link" = "YES" ]; then
-	ngx_module_type=HTTP
+else
+	ngx_module_type=MISC
 	ngx_module_name="$ZMQ_MODULE"
-	ngx_module_incs=
-	ngx_module_deps=
 	ngx_module_srcs="$ZMQ_SRCS"
 
 	. auto/module
