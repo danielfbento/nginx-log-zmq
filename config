@@ -60,6 +60,8 @@ else
 	ngx_module_name="$ZMQ_MODULE"
 	ngx_module_srcs="$ZMQ_SRCS"
 
-	. auto/module
+	HTTP_MODULES="$HTTP_MODULES $ZMQ_MODULE"
+	NGX_ADDONS_SRC="$NGX_ADDON_SRCS $ZMQ_SRCS"
+	NGX_ADDONS_DEPS="$NGX_ADDON_DEPS $ZMQ_DEPS"
 
 fi
