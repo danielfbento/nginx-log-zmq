@@ -656,6 +656,7 @@ ngx_http_log_zmq_set_server(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 
     /* if the protocol used is TCP, parse it and use nginx parse_url to validate the input */
     if (endpoint->kind == TCP) {
+        ngx_memzero(&u, sizeof(ngx_url_t));
         u.url = value[2];
         u.default_port = __get_default_port(endpoint->kind);
         u.no_resolve = 0;
